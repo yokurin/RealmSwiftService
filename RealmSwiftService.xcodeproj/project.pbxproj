@@ -20,6 +20,8 @@
 		4A9C9B6D218F44B900B97C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C9B6B218F44B900B97C24 /* LaunchScreen.storyboard */; };
 		4A9C9B73218F44E100B97C24 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B72218F44E100B97C24 /* Dog.swift */; };
 		4A9C9B75218F44EB00B97C24 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B74218F44EB00B97C24 /* Cat.swift */; };
+		4A9C9B79218F48BF00B97C24 /* RealmSwiftService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C9B3C218F42CC00B97C24 /* RealmSwiftService.framework */; };
+		4A9C9B7A218F48BF00B97C24 /* RealmSwiftService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C9B3C218F42CC00B97C24 /* RealmSwiftService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90577F3999F07A6EF6B76B65 /* Pods_RealmSwiftService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D2E6F2977A349B484FB23C /* Pods_RealmSwiftService.framework */; };
 		A03B13A91DE4E90C6EBF6EA5 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BC59DCBB743429C5837AA9 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +34,28 @@
 			remoteGlobalIDString = 4A9C9B3B218F42CC00B97C24;
 			remoteInfo = RealmSwiftService;
 		};
+		4A9C9B7B218F48BF00B97C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A9C9B33218F42CC00B97C24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9C9B3B218F42CC00B97C24;
+			remoteInfo = RealmSwiftService;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A9C9B7D218F48BF00B97C24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A9C9B7A218F48BF00B97C24 /* RealmSwiftService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		276DBD93EFB6A7872605B2BE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9C9B79218F48BF00B97C24 /* RealmSwiftService.framework in Frameworks */,
 				A03B13A91DE4E90C6EBF6EA5 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,9 +175,8 @@
 				4A9C9B64218F44B700B97C24 /* ViewController.swift */,
 				4A9C9B76218F44F400B97C24 /* Model */,
 				4A9C9B66218F44B700B97C24 /* Main.storyboard */,
-				4A9C9B69218F44B900B97C24 /* Assets.xcassets */,
 				4A9C9B6B218F44B900B97C24 /* LaunchScreen.storyboard */,
-				4A9C9B6E218F44B900B97C24 /* Info.plist */,
+				4A9C9B78218F488300B97C24 /* Resources */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -175,6 +198,15 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		4A9C9B78218F488300B97C24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C9B69218F44B900B97C24 /* Assets.xcassets */,
+				4A9C9B6E218F44B900B97C24 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		967CB9C687758172DC1CA758 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +217,6 @@
 				BDA318CAB60137A152F0A5D3 /* Pods-RealmSwiftServiceTests.debug.xcconfig */,
 				326693C15B9614381F062279 /* Pods-RealmSwiftServiceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -250,10 +281,12 @@
 				4A9C9B5D218F44B700B97C24 /* Frameworks */,
 				4A9C9B5E218F44B700B97C24 /* Resources */,
 				C94973DC5DDCE8CA150942C8 /* [CP] Embed Pods Frameworks */,
+				4A9C9B7D218F48BF00B97C24 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4A9C9B7C218F48BF00B97C24 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -458,6 +491,11 @@
 			isa = PBXTargetDependency;
 			target = 4A9C9B3B218F42CC00B97C24 /* RealmSwiftService */;
 			targetProxy = 4A9C9B47218F42CC00B97C24 /* PBXContainerItemProxy */;
+		};
+		4A9C9B7C218F48BF00B97C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9C9B3B218F42CC00B97C24 /* RealmSwiftService */;
+			targetProxy = 4A9C9B7B218F48BF00B97C24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -698,9 +736,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56D60DCE6F867EFC3D35B4EC /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,9 +755,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 276DBD93EFB6A7872605B2BE /* Pods-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
