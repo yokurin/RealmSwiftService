@@ -1,0 +1,6 @@
+framework module Pods_RealmSwiftServiceTests {
+  umbrella header "Pods-RealmSwiftServiceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
