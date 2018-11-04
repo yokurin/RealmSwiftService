@@ -8,8 +8,8 @@ Support default CRUD functions.
 [![License](https://img.shields.io/cocoapods/l/RealmSwiftService.svg?style=flat)](https://cocoapods.org/pods/RealmSwiftService)
 [![Platform](https://img.shields.io/cocoapods/p/RealmSwiftService.svg?style=flat)](https://cocoapods.org/pods/RealmSwiftService) -->
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=for-the-badge)](https://developer.apple.com/iphone/index.action)
-[![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg?style=for-the-badge)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=for-the-badge)](https://github.com/Carthage/Carthage)
+<!--[![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg?style=for-the-badge)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)-->
+<!--[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=for-the-badge)](https://github.com/Carthage/Carthage)-->
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=for-the-badge)](http://mit-license.org)
 
 ## Example
