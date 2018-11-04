@@ -11,6 +11,7 @@
 		4A9C9B4B218F42CC00B97C24 /* RealmSwiftServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B4A218F42CC00B97C24 /* RealmSwiftServiceTests.swift */; };
 		4A9C9B4D218F42CC00B97C24 /* RealmSwiftService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9C9B3F218F42CC00B97C24 /* RealmSwiftService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A9C9B57218F430A00B97C24 /* RealmAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B56218F430A00B97C24 /* RealmAccessible.swift */; };
+		4A9C9B5B218F43B000B97C24 /* RealmDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B5A218F43B000B97C24 /* RealmDao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		4A9C9B4A218F42CC00B97C24 /* RealmSwiftServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSwiftServiceTests.swift; sourceTree = "<group>"; };
 		4A9C9B4C218F42CC00B97C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A9C9B56218F430A00B97C24 /* RealmAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccessible.swift; sourceTree = "<group>"; };
+		4A9C9B5A218F43B000B97C24 /* RealmDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				4A9C9B3F218F42CC00B97C24 /* RealmSwiftService.h */,
 				4A9C9B56218F430A00B97C24 /* RealmAccessible.swift */,
+				4A9C9B5A218F43B000B97C24 /* RealmDao.swift */,
 				4A9C9B40218F42CC00B97C24 /* Info.plist */,
 			);
 			path = RealmSwiftService;
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9C9B5B218F43B000B97C24 /* RealmDao.swift in Sources */,
 				4A9C9B57218F430A00B97C24 /* RealmAccessible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
