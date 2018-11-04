@@ -10,6 +10,7 @@
 		4A9C9B46218F42CC00B97C24 /* RealmSwiftService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C9B3C218F42CC00B97C24 /* RealmSwiftService.framework */; };
 		4A9C9B4B218F42CC00B97C24 /* RealmSwiftServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B4A218F42CC00B97C24 /* RealmSwiftServiceTests.swift */; };
 		4A9C9B4D218F42CC00B97C24 /* RealmSwiftService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9C9B3F218F42CC00B97C24 /* RealmSwiftService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9C9B57218F430A00B97C24 /* RealmAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C9B56218F430A00B97C24 /* RealmAccessible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4A9C9B45218F42CC00B97C24 /* RealmSwiftServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmSwiftServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C9B4A218F42CC00B97C24 /* RealmSwiftServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSwiftServiceTests.swift; sourceTree = "<group>"; };
 		4A9C9B4C218F42CC00B97C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9C9B56218F430A00B97C24 /* RealmAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccessible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4A9C9B3F218F42CC00B97C24 /* RealmSwiftService.h */,
+				4A9C9B56218F430A00B97C24 /* RealmAccessible.swift */,
 				4A9C9B40218F42CC00B97C24 /* Info.plist */,
 			);
 			path = RealmSwiftService;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					4A9C9B3B218F42CC00B97C24 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					4A9C9B44218F42CC00B97C24 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9C9B57218F430A00B97C24 /* RealmAccessible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		4A9C9B51218F42CC00B97C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.yokurin.RealmSwiftService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		4A9C9B52218F42CC00B97C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		4A9C9B54218F42CC00B97C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RealmSwiftServiceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		4A9C9B55218F42CC00B97C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RealmSwiftServiceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
