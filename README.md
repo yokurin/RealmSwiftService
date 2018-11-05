@@ -8,9 +8,10 @@ Support default CRUD functions.
 [![License](https://img.shields.io/cocoapods/l/RealmSwiftService.svg?style=flat)](https://cocoapods.org/pods/RealmSwiftService)
 [![Platform](https://img.shields.io/cocoapods/p/RealmSwiftService.svg?style=flat)](https://cocoapods.org/pods/RealmSwiftService) -->
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=for-the-badge)](https://developer.apple.com/iphone/index.action)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=for-the-badge)](http://mit-license.org)
 <!--[![Cocoapods](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg?style=for-the-badge)](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg)-->
 <!--[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=for-the-badge)](https://github.com/Carthage/Carthage)-->
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=for-the-badge)](http://mit-license.org)
+
 
 ## Example
 
@@ -60,13 +61,15 @@ try! cat.save()
 Cat.all().forEach { print("\($0.name)-\($0.id)") } // tama-UUIDString
 
 // RealmAccessible Example
+// Static Methods
 let cat = Cat(name: "tama")  // Create Realm Object
-_ = Cat.all()                // Get All Object of Cat
-_ = Cat.find(by: "id")       // Find Cat by id property
-_ = Cat.first()              // Get Last Object of Cat
-_ = Cat.last()               // Get First Object of Cat
 try! cat.save()              // Save Object of Cat
 try! cat.delete()            // Delete Object of Cat
+// Instance Methods
+_ = Cat.all()                // Get All Object of Cat
+_ = Cat.find(by: "id")       // Find Cat by id property
+_ = Cat.first()              // Get First Object of Cat
+_ = Cat.last()               // Get Last Object of Cat
 try! Cat.deleteAll()         // Delete All Object of Cat
 
 
