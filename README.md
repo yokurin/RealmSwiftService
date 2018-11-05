@@ -61,11 +61,11 @@ try! cat.save()
 Cat.all().forEach { print("\($0.name)-\($0.id)") } // tama-UUIDString
 
 // RealmAccessible Example
-// Static Methods
+// Instance Methods
 let cat = Cat(name: "tama")  // Create Realm Object
 try! cat.save()              // Save Object of Cat
 try! cat.delete()            // Delete Object of Cat
-// Instance Methods
+// Static Methods
 _ = Cat.all()                // Get All Object of Cat
 _ = Cat.find(by: "id")       // Find Cat by id property
 _ = Cat.first()              // Get First Object of Cat
